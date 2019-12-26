@@ -1,0 +1,10 @@
+server:
+  port: 9000
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+#  ignored-patterns:
+#    - /**/product/listForOrder
